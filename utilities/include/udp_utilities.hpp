@@ -8,6 +8,14 @@
 #define MAXDATASIZE 1024
 
 namespace udp_util{
+    enum sizes{
+        ID_SIZE,
+        USERNAME_SIZE,
+        PAYLOAD_SIZE,
+        FREE_SIZE,
+        CHECKSUM_SIZE,
+        TIMESTAMP_SIZE
+    };
     int checksum(const std::string&);
     std::string normalize(const std::string&, size_t, char);
     std::string normalize(const std::string&, char);
